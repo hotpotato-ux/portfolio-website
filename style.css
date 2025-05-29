@@ -1,0 +1,134 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: url('./images/background.png') no-repeat center center fixed;
+  background-size: cover;
+  color: #8b8c8f;
+  line-height: 1.6;
+  position: relative;
+  padding-top: 80px;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(1px);
+  z-index: -1;
+}
+
+/* Header */
+header {
+  background-color: rgba(26, 35, 126, 0.95);
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  border-bottom: 4px solid #3f51b5;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+header h1 {
+  font-size: 1.6rem;
+  margin-bottom: 0.4rem;
+}
+header p {
+  font-size: 0.9 rem;
+  font-weight: 300;
+}
+
+/* Sections */
+main {
+  padding: 2rem 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
+  color: #1a237e;
+  position: relative;
+  padding-bottom: 0.3rem;
+}
+section h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #3f51b5;
+  margin-top: 6px;
+  border-radius: 2px;
+}
+
+/* Card Styles */
+.about, .contact {
+  margin-top: 50px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* Projects */
+.projects {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+.project-card {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+.project-card h3 {
+  margin-bottom: 0.5rem;
+}
+.project-card a {
+  text-decoration: none;
+  color: #1a237e;
+  font-weight: 600;
+}
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+/* Contact */
+.contact a {
+  color: #1a237e;
+  text-decoration: none;
+}
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: rgba(232, 234, 246, 0.9);
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 2rem;
+}

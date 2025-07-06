@@ -1,4 +1,3 @@
-/* Global Reset */
 * {
   margin: 0;
   padding: 0;
@@ -27,7 +26,6 @@ body::before {
   z-index: -1;
 }
 
-/* Header */
 header {
   background-color: rgba(26, 35, 126, 0.95);
   color: white;
@@ -48,7 +46,6 @@ header p {
   font-weight: 300;
 }
 
-/* Sections */
 main {
   padding: 2rem 1rem;
   max-width: 1000px;
@@ -76,7 +73,6 @@ section h2::after {
   border-radius: 2px;
 }
 
-/* Card Styles */
 .about, .contact {
   margin-top: 50px;
   background-color: rgba(255, 255, 255, 0.95);
@@ -85,7 +81,6 @@ section h2::after {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
-/* Projects */
 .projects {
   display: grid;
   gap: 1.5rem;
@@ -113,8 +108,6 @@ section h2::after {
 .project-card a:hover {
   text-decoration: underline;
 }
-
-/* Contact */
 .contact a {
   color: #1a237e;
   text-decoration: none;
@@ -123,7 +116,6 @@ section h2::after {
   text-decoration: underline;
 }
 
-/* Footer */
 footer {
   text-align: center;
   padding: 2rem 1rem;
